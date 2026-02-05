@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpEthiopia - Smart Donation Platform</title>
+    <link rel="icon" type="image/jpeg" href="images/download.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar container">
+            <div class="logo">Help<span>Ethiopia</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="items.html">Browse Items</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="request.html">Request</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav-auth">
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li><a href="signup.html" class="btn-signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+      <!--  HERO SECTION  -->
+    <section class="hero-carousel">
+        <div class="carousel-slide">
+            <img src="images/grils_recive.png" alt="Helping People">
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>Give Hope. Change Lives in <span>Ethiopia</span>.</h1>
+            <p>
+                Your support reaches real families, real needs, and real change —
+                simply, transparently, and securely.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="donate.html" class="hero-btn primary">Post a Donation</a>
+                <a href="request.html" class="hero-btn secondary">Make a Request</a>
+            </div>
+        </div>
+    </section>
+
+    <!--   PARTNER NGO SECTION   -->
+    <section class="partner-section">
+        <div class="container">
+            <h2 class="section-title">🤝 Trusted by Leading Organizations</h2>
+            <p class="section-subtitle">
+                Working together to create real impact across Ethiopia
+            </p>
+
+            <div class="partner-grid">
+
+                <a href="https://www.wegenfund.com/">
+                <div class="partner-card">
+                    <img src="images/wagen fund.png" alt="Community Care">
+                    <h4>Wegenfund</h4>
+                    <span>✔ Verified Partner</span>
+                </div>
+                </a>
+                
+                <a href="https://www.wvi.org/ethiopia">
+                <div class="partner-card">
+                    <img src="images/world-vision-logo-png_seeklogo-153938.png" alt="Hope Foundation">
+                    <h4> World Vision</h4>
+                    <span>✔ Verified Partner</span>
+                </div>
+                </a>
+
+                <a href="https://www.unicef.org/ethiopia/">
+                <div class="partner-card">
+                    <img src="images/unicif logo.png" alt="Relief Network">
+                    <h4>Unicif</h4>
+                    <span>✔ Verified Partner</span>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+<section class="mission-section">
+    <div class="container">
+        <h2 class="section-title">Our Mission</h2>
+
+        <div class="mission-content">
+            <div class="mission-text">
+                <h3>Transparency, Efficiency, Trust</h3>
+                <p>
+                    HelpEthiopia connects donors with people in need across Ethiopia.
+                    We make sure donated items reach the right people in a simple and clear way.
+                </p>
+                <p>
+                    Our goal is to reduce waste, improve transparency, and support communities
+                    through direct and meaningful donations.
+                </p>
+                <a href="about.html" class="btn btn-primary">Read More</a>
+            </div>
+
+            <div class="mission-media">
+                <video controls class="mission-video">
+                    <source src="video/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- How It Works Section -->
+    <section class="section" >
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Simple steps to smart giving</p>
+            
+            <div class="grid grid-4">
+                <div class="card text-center">
+                    <h3>1. Post It</h3>
+                    <p>Donors quickly list their items (food, books, electronics) with photos and location details.</p>
+                </div>
+                <div class="card text-center">
+                    <h3>2. Pin the Need</h3>
+                    <p>Recipients/NGOs post requests, marking their location and urgency level.</p>
+                </div>
+                <div class="card text-center">
+                    <h3>3. Smart Match</h3>
+                    <p>The platform matches nearby donations to active requests based on need and location.</p>
+                </div>
+                <div class="card text-center">
+                    <h3>4. Connect</h3>
+                    <p>Users connect directly to arrange safe delivery of items to recipients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Items Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Recent Activity</h2>
+            <p class="section-subtitle">See what's happening right now in our community</p>
+            
+            <div id="recentItemsGrid" class="grid grid-3">
+                <!-- Items will be loaded by JavaScript -->
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="items.html" class="btn btn-primary">View All Items</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="section" style="background-color: var(--light-gray);">
+        <div class="container">
+            <h2 class="section-title">Our Impact</h2>
+            <p class="section-subtitle">Making a difference together</p>
+            
+            <div class="grid grid-4">
+                <div class="card text-center">
+                    <h3 style="color: var(--primary-green); font-size: 2.5rem;">500+</h3>
+                    <p>Items Donated</p>
+                </div>
+                <div class="card text-center">
+                    <h3 style="color: var(--primary-green); font-size: 2.5rem;">1,200+</h3>
+                    <p>Lives Touched</p>
+                </div>
+                <div class="card text-center">
+                    <h3 style="color: var(--primary-green); font-size: 2.5rem;">15</h3>
+                    <p>Partner NGOs</p>
+                </div>
+                <div class="card text-center">
+                    <h3 style="color: var(--primary-green); font-size: 2.5rem;">8</h3>
+                    <p>Cities Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- FAQ Section -->
+    <section class="section" style="background-color: var(--light-gray);">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <h4>How does HelpEthiopia work?</h4>
+                    <p>HelpEthiopia connects donors with verified recipients. Simply post what you want to donate or request what you need, and our platform helps match nearby opportunities.</p>
+                </div>
+                
+                <div class="card">
+                    <h4>Is it free to use?</h4>
+                    <p>Yes! HelpEthiopia is completely free for both donors and recipients. Our mission is to make giving accessible to everyone.</p>
+                </div>
+                
+                <div class="card">
+                    <h4>How do I verify my organization?</h4>
+                    <p>NGOs and organizations can contact us directly to begin the verification process. We review documentation to ensure legitimacy.</p>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. Newsletter   -->
+<section class="newsletter-cta">
+    <div class="container">
+        <h2>Stay Connected with Our Community</h2>
+        <p class="subtitle">
+            Get weekly updates on new donations, success stories, and ways to make an impact
+        </p>
+
+<form id="newsletterForm" class="newsletter-form">
+    <input 
+        type="email" 
+        id="newsletterEmail" 
+        placeholder="Enter your email address"
+    >
+    <button type="submit">Subscribe</button>
+</form>
+
+<p id="newsletterMessage" class="newsletter-message"></p>
+
+        <p class="newsletter-note">
+            Join 500+ community members • Unsubscribe anytime
+        </p>
+    </div>
+</section>
+
+
+   <!--  FOOTER  -->
+   <footer class="footer-main">
+    <div class="container footer-content">
+        <div class="footer-logo-col">
+            <div class="footer-logo">Help<span>Ethiopia</span></div>
+            <p class="footer-info">
+                Connecting generosity with verified needs across Ethiopia.<br>
+                Addis Ababa, Ethiopia<br>
+                Phone: +251-11-234-5678
+            </p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer-col">
+            <h4>About Us</h4>
+            <ul>
+                <li><a href="about.html#vision">Vision</a></li>
+                <li><a href="about.html#story">Our Story</a></li>
+                <li><a href="about.html#team">Our People</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>What We Do</h4>
+            <ul>
+                <li><a href="items.html">Browse Donations</a></li>
+                <li><a href="request.html">Post a Request</a></li>
+                <li><a href="donate.html">Become a Donor</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Get Involved</h4>
+            <ul>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 HelpEthiopia. All Rights Reserved.</p>
+        <p>Built with purpose for the Ethiopian community.</p>
+    </div>
+</footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

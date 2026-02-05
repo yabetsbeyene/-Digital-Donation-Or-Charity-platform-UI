@@ -1,0 +1,63 @@
+/* forms.css - Form styles for donate, request, login, signup pages */
+/* Only unique styles not covered by style.css */
+
+/* ===== ALERTS ===== */
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 400px;
+    animation: slideIn 0.3s ease;
+}
+
+.alert-success {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.alert-error {
+    background-color: var(--primary-red);
+    color: var(--white);
+}
+
+.alert-info {
+    background-color: var(--primary-yellow);
+    color: var(--dark);
+}
+
+.alert-close {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* ===== RESPONSIVE ALERTS ===== */
+@media (max-width: 768px) {
+    .alert {
+        right: 10px;
+        left: 10px;
+        max-width: none;
+    }
+}

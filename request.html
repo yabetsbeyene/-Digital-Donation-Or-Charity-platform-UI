@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Item - HelpEthiopia</title>
+    <link rel="icon" type="image/jpeg" href="images/download.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar container">
+            <div class="logo">Help<span>Ethiopia</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="items.html">Browse Items</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="request.html" class="active">Request</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav-auth">
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li><a href="signup.html" class="btn-signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Request Assistance</h1>
+            <p>Let the community know what you need</p>
+        </div>
+    </section>
+
+    <!-- Request Form -->
+    <section class="section">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="text-center mb-3">Request Details</h2>
+                
+                <form id="requestForm">
+                    <div class="form-group">
+                        <label for="itemName">What do you need? *</label>
+                        <input type="text" id="itemName" name="itemName" class="form-control" placeholder="e.g. School Books for Grade 9" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category *</label>
+                        <select id="category" name="category" class="form-control" required>
+                            <option value="">Select a category</option>
+                            <option value="Food">Food</option>
+                            <option value="Clothing">Clothing</option>
+                            <option value="Education">Education</option>
+                            <option value="Healthcare">Healthcare</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urgency">Urgency Level *</label>
+                        <select id="urgency" name="urgency" class="form-control" required>
+                            <option value="">Select urgency level</option>
+                            <option value="Low">Low - Can wait a few weeks</option>
+                            <option value="Medium">Medium - Need within a week</option>
+                            <option value="High">High - Need in 2-3 days</option>
+                            <option value="Critical">Critical - Need Immediately</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location *</label>
+                        <select id="location" name="location" class="form-control" required>
+                            <option value="">Select your location</option>
+                            <option value="Addis Ababa">Addis Ababa</option>
+                            <option value="Hawassa">Hawassa</option>
+                            <option value="Adama">Adama</option>
+                            <option value="Gondar">Gondar</option>
+                            <option value="Bahir Dar">Bahir Dar</option>
+                            <option value="Mekelle">Mekelle</option>
+                            <option value="Dire Dawa">Dire Dawa</option>
+                            <option value="Jimma">Jimma</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description *</label>
+                        <textarea id="description" name="description" class="form-control" placeholder="Describe what you need, why it's needed, and any specific requirements..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary" style="width: 100%;">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="footer-main">
+    <div class="container footer-content">
+        <div class="footer-logo-col">
+            <div class="footer-logo">Help<span>Ethiopia</span></div>
+            <p class="footer-info">
+                Connecting generosity with verified needs across Ethiopia.<br>
+                Addis Ababa, Ethiopia<br>
+                Phone: +251-11-234-5678
+            </p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>About Us</h4>
+            <ul>
+                <li><a href="about.html#vision">Vision</a></li>
+                <li><a href="about.html#story">Our Story</a></li>
+                <li><a href="about.html#team">Our People</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>What We Do</h4>
+            <ul>
+                <li><a href="items.html">Browse Donations</a></li>
+                <li><a href="request.html">Post a Request</a></li>
+                <li><a href="donate.html">Become a Donor</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Get Involved</h4>
+            <ul>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 HelpEthiopia. All Rights Reserved.</p>
+        <p>Built with purpose for the Ethiopian community.</p>
+    </div>
+</footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/request.js"></script>
+</body>
+</html>

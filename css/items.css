@@ -1,0 +1,105 @@
+/* items.css - Items page specific styles */
+/* Only unique styles not covered by style.css */
+
+/* ===== ITEM CARDS ===== */
+.item-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item-content {
+    padding: 1.5rem;
+}
+
+.item-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.item-content p {
+    margin-bottom: 0.5rem;
+    color: var(--medium-gray);
+}
+
+/* ===== BADGES ===== */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.badge-donation {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.badge-request {
+    background-color: var(--primary-red);
+    color: var(--white);
+}
+
+/* ===== FILTERS ===== */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-green);
+    background: transparent;
+    color: var(--primary-green);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary-green);
+    color: var(--white);
+}
+
+/* ===== NO ITEMS MESSAGE ===== */
+.no-items {
+    text-align: center;
+    padding: 3rem;
+    color: var(--medium-gray);
+}
+
+.no-items h3 {
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .filters {
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
